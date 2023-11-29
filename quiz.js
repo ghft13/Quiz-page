@@ -66,7 +66,6 @@ function nextQuestion() {
     showQuestion();
     popOptions(num);
   } else {
-    alert("Wrong");
     let main = document.getElementsByTagName("main")[0];
     console.log(main);
     main.innerHTML = "";
@@ -74,8 +73,8 @@ function nextQuestion() {
     let createh2 = document.createElement("h2");
     createh2.textContent = `Your Score is ${score}`;
     creatediv.appendChild(createh2);
-    creatediv.classList.add('cent')
-    main.appendChild(creatediv)
+    creatediv.classList.add("cent");
+    main.appendChild(creatediv);
   }
 }
 
